@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A412058-06A0-4DC5-B611-A59D710E3577}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>酒店客房管理系统</RootNamespace>
+    <AssemblyName>酒店客房管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\杨浩\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>酒店客房管理系统.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EA889410C96DD29EAC4044EB6882489A004FE479</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>酒店客房管理系统_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="删除前台.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="删除前台.Designer.cs">
+      <DependentUpon>删除前台.cs</DependentUpon>
+    </Compile>
+    <Compile Include="删除房间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="删除房间.Designer.cs">
+      <DependentUpon>删除房间.cs</DependentUpon>
+    </Compile>
+    <Compile Include="删除管理员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="删除管理员.Designer.cs">
+      <DependentUpon>删除管理员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="开房.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="开房.Designer.cs">
+      <DependentUpon>开房.cs</DependentUpon>
+    </Compile>
+    <Compile Include="房间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="房间.Designer.cs">
+      <DependentUpon>房间.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新增前台.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新增前台.Designer.cs">
+      <DependentUpon>新增前台.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新增房间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新增房间.Designer.cs">
+      <DependentUpon>新增房间.cs</DependentUpon>
+    </Compile>
+    <Compile Include="新增管理员.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="新增管理员.Designer.cs">
+      <DependentUpon>新增管理员.cs</DependentUpon>
+    </Compile>
+    <Compile Include="查询客人.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="查询客人.Designer.cs">
+      <DependentUpon>查询客人.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录.Designer.cs">
+      <DependentUpon>登录.cs</DependentUpon>
+    </Compile>
+    <Compile Include="前台.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="前台.Designer.cs">
+      <DependentUpon>前台.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="窗口.cs" />
+    <Compile Include="管理.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="管理.Designer.cs">
+      <DependentUpon>管理.cs</DependentUpon>
+    </Compile>
+    <Compile Include="调整房间.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="调整房间.Designer.cs">
+      <DependentUpon>调整房间.cs</DependentUpon>
+    </Compile>
+    <Compile Include="退房.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="退房.Designer.cs">
+      <DependentUpon>退房.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="删除前台.resx">
+      <DependentUpon>删除前台.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="删除房间.resx">
+      <DependentUpon>删除房间.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="删除管理员.resx">
+      <DependentUpon>删除管理员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="开房.resx">
+      <DependentUpon>开房.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="房间.resx">
+      <DependentUpon>房间.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新增前台.resx">
+      <DependentUpon>新增前台.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新增房间.resx">
+      <DependentUpon>新增房间.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="新增管理员.resx">
+      <DependentUpon>新增管理员.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="查询客人.resx">
+      <DependentUpon>查询客人.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录.resx">
+      <DependentUpon>登录.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="前台.resx">
+      <DependentUpon>前台.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="管理.resx">
+      <DependentUpon>管理.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="调整房间.resx">
+      <DependentUpon>调整房间.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="退房.resx">
+      <DependentUpon>退房.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="酒店客房管理系统_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
